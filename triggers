@@ -3,7 +3,8 @@
 delimiter $
 触发器的创建语法如下：
 create trigger 触发器名称
-触发时间 after/before 监控事件 insert/update/delete
+触发时间 (after/before) 
+监控事件 (insert/update/delete)
 on 触发地点 表名（tableName）
 For each row
 begin
