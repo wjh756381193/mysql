@@ -1,0 +1,9 @@
+索引的分类
+1）主键索引 primary key
+2）唯一索引 unique
+3）普通索引 common
+4）全文索引 fulltext
+查看索引
+show index from 表名;
+
+create index 
