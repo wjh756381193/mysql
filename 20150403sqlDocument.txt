@@ -1,0 +1,12 @@
+20150403.sql文件是为了测试索引对大数据的影响所生成的一个大量插入数据的sql文件
+其中的建表语句是
+
+create table user (
+	id int unsigned not null default 0,
+	name char(36) not null default '',
+	age tinyint not null default 20,
+	createDate datetime
+)
+engine=myisam charset=utf8;
+
+20150403.sql 文件中文件记录大概为444.6万条
