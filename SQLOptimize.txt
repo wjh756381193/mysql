@@ -1,0 +1,19 @@
+MySQL数据运行状态的查询
+如 mysql的运行时间，insert、update、select的执行频率
+当前连接数
+show status like 'uptime';运行时间
+show status like 'com_select';select次数
+show status like 'com_insert';insert次数
+show status like 'com_update';update次数
+show [session|global] status like 'com_delete';delete次数
+show status like 'connections'显示连接数
+show status like 'slow_queries'显示慢查询
+
+SQL语句的优化
+1，定位慢查询 
+默认情况下，mysql认为10秒才是一个慢查询
+*修改mysql的慢查询时间为1秒
+show variables like 'long_query_time';
+显示当前慢查询的时间
+set long_query_time = 1;
+设置慢查询的时间为1秒
