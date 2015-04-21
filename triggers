@@ -1,15 +1,19 @@
 创建触发器之前我们要做如下的操作  将结束符设置为其他的字符 因为在begin和end之间
+触发器的四要素：触发时间，触发地点，监控时间，触发事件
+
 我们的sql语句的分隔符是用的分号
 delimiter $
 触发器的创建语法如下：
+
 create trigger 触发器名称
 触发时间 (after/before) 
 监控事件 (insert/update/delete)
 on 触发地点 表名（tableName）
 For each row
 begin
-触发的事件 update/delete/insert
+触发的事件 (update/delete/insert)
 end$
+
 eg1.
 create trigger tg1
 after insert on orders
