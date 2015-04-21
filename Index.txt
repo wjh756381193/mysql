@@ -8,10 +8,20 @@ show index from 表名;
 
 创建索引
 alter 表名 add index/unique/fulltext (字段名);
-alter 表名 add primary key (字段名);
+alter 表名 add primary key (字段名);   
 
 删除索引
 alter 表名 drop index 索引名称;
 
 删除主键索引
 alter 表名 drop primary key;
+
+索引的列的选择
+	1，较为频繁的查询字段上应该创建索引
+	2，唯一性太差的字段不适合建立索引
+	3，更新非常频繁的字段不适合创建索引
+	4，不会出现在where子句中的字段不该创建索引
+
+索引的使用时的注意事项
+1，对于创建的多列索引，只要查询条件使用了最左边的列，索引一般都会被使用。
+2，对于使用like的模糊查询，如果是'%aaa'的情况下不会使用索引，如果是'aaa%'的情况下可以使用到索引
