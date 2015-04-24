@@ -1,4 +1,6 @@
 MySQL中函数和存储过程
+delimeter $$
+声明定界符为$$
 创建函数
 create function rand_string(n INT)
 returns varchar(255)

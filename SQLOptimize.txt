@@ -2,9 +2,9 @@ MySQL数据运行状态的查询
 如 mysql的运行时间，insert、update、select的执行频率
 当前连接数
 show status like 'uptime';运行时间
-show status like 'com_select';select次数
-show status like 'com_insert';insert次数
-show status like 'com_update';update次数
+show status like 'com_select';	select次数
+show status like 'com_insert';	insert次数
+show status like 'com_update';	update次数
 show [session|global] status like 'com_delete';delete次数
 show status like 'connections'显示连接数
 show status like 'slow_queries'显示慢查询
