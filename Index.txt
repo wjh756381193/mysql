@@ -25,3 +25,21 @@ alter 表名 drop primary key;
 索引的使用时的注意事项
 1，对于创建的多列索引，只要查询条件使用了最左边的列，索引一般都会被使用。
 2，对于使用like的模糊查询，如果是'%aaa'的情况下不会使用索引，如果是'aaa%'的情况下可以使用到索引
+3，对于使用了or的添加的字段如果有的字段没有使用索引，则索引不会生效
+4，如果一个列是字符串类型，则在条件中必须加上引号包裹起来，否则索引失效
+5，如果mysql发现全表扫描比索引文件还快的话，则不会使用索引
+
+如何查看索引的使用率
+show status like "Handler_read%";
+handler_read_key 越高查询效率越高
+handler_read_rnd_next 这个值越高，说明查询效率越低
+
+在大批量插入数据的时候
+对于myisam
+alter table tb_name disable keys;
+loading data // insert 语句;
+alter table tb_name enable keys;
+对于innoDB
+1，将要导入的数据按照主键排序
+2，set unique_checks=0,关闭唯一性校验。
+3，set autocommit=0,关闭自动提交。
