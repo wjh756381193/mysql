@@ -1,0 +1,10 @@
+myisam 与 innodb 的区别
+1，myisam插入更新速度快
+2，innodb支持事务更加安全
+3，myisam不支持外键
+4，innodb锁行 myisam锁表
+5，myisam支持全文索引
+
+对myisam数据库类型的数据库要定期整理
+整理命令
+optimize table 表名；
