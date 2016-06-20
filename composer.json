@@ -1,0 +1,11 @@
+{
+	"name":"wangjh/mysql-skills",
+	"description":"mysql skills",
+	"version":"1.0.0",
+	"repositories":[
+		{
+			"type":"vcs",
+			"url":"https://github.com/wjh756381193/mysql"
+		}
+	]
+}

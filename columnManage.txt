@@ -1,0 +1,28 @@
+表中列声明的方法是 
+列名称 列类型 列属性;
+eg. 
+id int not null primary key auto_increment;
+name varchar(24) not null default '' comment 'hello world';
+
+添加列的语法
+alter table tableName add 列声明;
+设有user表 为user表添加name字段
+eg. 
+alter table user add name varchar(30) not null default '';
+
+添加列到某一列的后面 
+alter table tableName add 列声明 after 列名称;
+
+添加的列放到第一列的语法
+alter table tableName add 列声明 first;
+
+改变一个列的语法
+alter table tableName change 列名称 列声明;
+eg.
+alter table user change name names varchar(30) not null default '';
+
+删除一个列的语法
+alter table tableName drop columnName;
+
+eg.
+alter table user drop name;

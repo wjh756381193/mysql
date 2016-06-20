@@ -1,0 +1,12 @@
+20150403.sql¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿sql¿¿
+¿¿¿¿¿¿¿¿
+
+create table user (
+	id int unsigned not null default 0,
+	name char(36) not null default '',
+	age tinyint not null default 20,
+	createDate datetime
+)
+engine=myisam charset=utf8;
+
+20150403.sql ¿¿¿¿¿¿¿¿¿¿444.6¿¿
