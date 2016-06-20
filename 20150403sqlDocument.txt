@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 20150403.sql靠靠靠靠靠靠靠靠靠靠靠靠靠靠縮ql靠
 靠靠靠靠
+=======
+20150403.sql文件是为了测试索引对大数据的影响所生成的一个大量插入数据的sql文件
+其中的建表语句是
+>>>>>>> dc0cd3ebdbcb0455e6bf6ca3c47e5eebf326c586
 
 create table user (
 	id int unsigned not null default 0,
@@ -9,4 +14,8 @@ create table user (
 )
 engine=myisam charset=utf8;
 
+<<<<<<< HEAD
 20150403.sql 靠靠靠靠靠444.6靠
+=======
+20150403.sql 文件中文件记录大概为444.6万条
+>>>>>>> dc0cd3ebdbcb0455e6bf6ca3c47e5eebf326c586
