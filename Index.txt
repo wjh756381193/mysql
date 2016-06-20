@@ -1,45 +1,46 @@
-Ë÷ÒıµÄ·ÖÀà
-1£©Ö÷¼üË÷Òı primary key
-2£©Î¨Ò»Ë÷Òı unique
-3£©ÆÕÍ¨Ë÷Òı common
-4£©È«ÎÄË÷Òı fulltext
-²é¿´Ë÷Òı
-show index from ±íÃû;
+¿¿¿¿¿
+1¿¿¿¿¿ primary key
+2¿¿¿¿¿ unique
+3¿¿¿¿¿ common
+4¿¿¿¿¿ fulltext
+¿¿¿¿
+show index from ¿¿;
 
-´´½¨Ë÷Òı
-alter ±íÃû add index/unique/fulltext (×Ö¶ÎÃû);
-alter ±íÃû add primary key (×Ö¶ÎÃû);   
+¿¿¿¿
+alter ¿¿ add index/unique/fulltext (¿¿¿);
+alter ¿¿ add primary key (¿¿¿);   
 
-É¾³ıË÷Òı
-alter ±íÃû drop index Ë÷ÒıÃû³Æ;
+¿¿¿¿
+alter ¿¿ drop index ¿¿¿¿;
 
-É¾³ıÖ÷¼üË÷Òı
-alter ±íÃû drop primary key;
+¿¿¿¿¿¿
+alter ¿¿ drop primary key;
 
-Ë÷ÒıµÄÁĞµÄÑ¡Ôñ
-	1£¬½ÏÎªÆµ·±µÄ²éÑ¯×Ö¶ÎÉÏÓ¦¸Ã´´½¨Ë÷Òı
-	2£¬Î¨Ò»ĞÔÌ«²îµÄ×Ö¶Î²»ÊÊºÏ½¨Á¢Ë÷Òı
-	3£¬¸üĞÂ·Ç³£Æµ·±µÄ×Ö¶Î²»ÊÊºÏ´´½¨Ë÷Òı
-	4£¬²»»á³öÏÖÔÚwhere×Ó¾äÖĞµÄ×Ö¶Î²»¸Ã´´½¨Ë÷Òı
+¿¿¿¿¿¿¿
+	1¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
+		2¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
+			3¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
+				4¿¿¿¿¿¿where¿¿¿¿¿¿¿¿¿¿¿¿
 
-Ë÷ÒıµÄÊ¹ÓÃÊ±µÄ×¢ÒâÊÂÏî
-1£¬¶ÔÓÚ´´½¨µÄ¶àÁĞË÷Òı£¬Ö»Òª²éÑ¯Ìõ¼şÊ¹ÓÃÁË×î×ó±ßµÄÁĞ£¬Ë÷ÒıÒ»°ã¶¼»á±»Ê¹ÓÃ¡£
-2£¬¶ÔÓÚÊ¹ÓÃlikeµÄÄ£ºı²éÑ¯£¬Èç¹ûÊÇ'%aaa'µÄÇé¿öÏÂ²»»áÊ¹ÓÃË÷Òı£¬Èç¹ûÊÇ'aaa%'µÄÇé¿öÏÂ¿ÉÒÔÊ¹ÓÃµ½Ë÷Òı
-3£¬¶ÔÓÚÊ¹ÓÃÁËorµÄÌí¼ÓµÄ×Ö¶ÎÈç¹ûÓĞµÄ×Ö¶ÎÃ»ÓĞÊ¹ÓÃË÷Òı£¬ÔòË÷Òı²»»áÉúĞ§
-4£¬Èç¹ûÒ»¸öÁĞÊÇ×Ö·û´®ÀàĞÍ£¬ÔòÔÚÌõ¼şÖĞ±ØĞë¼ÓÉÏÒıºÅ°ü¹üÆğÀ´£¬·ñÔòË÷ÒıÊ§Ğ§
-5£¬Èç¹ûmysql·¢ÏÖÈ«±íÉ¨Ãè±ÈË÷ÒıÎÄ¼ş»¹¿ìµÄ»°£¬Ôò²»»áÊ¹ÓÃË÷Òı
+				¿¿¿¿¿¿¿¿¿¿¿
+				1¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
+				2¿¿¿¿¿like¿¿¿¿¿¿¿¿¿'%aaa'¿¿¿¿¿¿¿¿¿¿¿¿¿¿'aaa%'¿¿¿¿¿¿¿¿¿¿¿
+				3¿¿¿¿¿¿or¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
+				4¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
+				5¿¿¿mysql¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
 
-ÈçºÎ²é¿´Ë÷ÒıµÄÊ¹ÓÃÂÊ
-show status like "Handler_read%";
-handler_read_key Ô½¸ß²éÑ¯Ğ§ÂÊÔ½¸ß
-handler_read_rnd_next Õâ¸öÖµÔ½¸ß£¬ËµÃ÷²éÑ¯Ğ§ÂÊÔ½µÍ
+				¿¿¿¿¿¿¿¿¿¿
+				show status like "Handler_read%";
+				handler_read_key ¿¿¿¿¿¿¿¿
+				handler_read_rnd_next ¿¿¿¿¿¿¿¿¿¿¿¿¿¿
 
-ÔÚ´óÅúÁ¿²åÈëÊı¾İµÄÊ±ºò
-¶ÔÓÚmyisam
-alter table tb_name disable keys;
-loading data // insert Óï¾ä;
-alter table tb_name enable keys;
-¶ÔÓÚinnoDB
-1£¬½«Òªµ¼ÈëµÄÊı¾İ°´ÕÕÖ÷¼üÅÅĞò
-2£¬set unique_checks=0,¹Ø±ÕÎ¨Ò»ĞÔĞ£Ñé¡£
-3£¬set autocommit=0,¹Ø±Õ×Ô¶¯Ìá½»¡£
+				¿¿¿¿¿¿¿¿¿¿¿
+				¿¿myisam
+				alter table tb_name disable keys;
+				loading data // insert ¿¿;
+				alter table tb_name enable keys;
+				¿¿innoDB
+				1¿¿¿¿¿¿¿¿¿¿¿¿¿¿
+				2¿set unique_checks=0,¿¿¿¿¿¿¿¿
+				3¿set autocommit=0,¿¿¿¿¿¿
+				
